@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+nav {
+    background-color: #0084fd;
+}
+
+/*MISURE TEST*/
+.nav-bar {
+    min-height: 75px;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo {
+    height: 40px;
+    width: 80px;
+    background-color: white;
+}
+
+.bars {
+    height: 40px;
+    width: 80px;
+    background-color: white;
+}
+
+
+
+.row {
+    display: flex;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+}
