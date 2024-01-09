@@ -28,7 +28,7 @@ nav {
     background-color: white;
 }
 /*MISURE TEST*/
-.bars {
+.nav-functions {
     height: 40px;
     width: 80px;
     background-color: white;
@@ -80,6 +80,15 @@ nav {
     width: 100%;
     
     background-color: aqua;
+}
+/*MISURE TEST*/
+.cards-container-img {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    gap: 25px;
+    align-items: center;
 }
 /*MISURE TEST*/
 .benefits-container {
@@ -157,7 +166,6 @@ footer.container {
 @media screen and (min-width: 768px) {
     .cards-container-up {
         flex-direction: row;
-        
     }
 
     .cards-container-up .card {
@@ -205,5 +213,64 @@ footer.container {
 
     .benefits {
         width: 48%;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .nav-bar {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .cards-container-img {
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 60px;
+    }
+    /*MISURE TEST*/
+    .smaller {
+        min-height: 420px;
+    }
+
+    .benefits {
+        width: 31.3%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav-items {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) { 
+
+    .container {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .nav-bar{
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }
