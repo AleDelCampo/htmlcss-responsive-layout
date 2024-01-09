@@ -8,6 +8,10 @@ nav {
     background-color: #0084fd;
 }
 
+.row {
+    display: flex;
+}
+
 /*MISURE TEST*/
 .nav-bar {
     min-height: 75px;
@@ -30,31 +34,24 @@ nav {
     background-color: white;
 }
 
-.row {
-    display: flex;
-}
 /*MISURE TEST*/
-.card-container {
+.container {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: blue;
-    
 }
 /*MISURE TEST*/
-.cards-up {
+.cards-container-up {
     flex-direction: column;
     max-height: 100%;
     max-width: 100%;
-    background-color: red;
     gap: 25px;
     align-items: center;
 }
 /*MISURE TEST*/
-.cards {
+.cards-container {
     flex-direction: column;
     max-height: 100%;
     max-width: 100%;
-    background-color: red;
     margin-top: 25px;
     gap: 25px;
     align-items: center;
@@ -73,13 +70,62 @@ nav {
     
     background-color: aqua;
 }
+/*MISURE TEST*/
+.texts-container {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    gap: 25px;
+    align-items: center;
+}
+/*MISURE TEST*/
+.texts-card {
+    min-height: 360px;
+    width: 60%;
+    
+    background-color: aqua;
+}
+/*MISURE TEST*/
+.start-container {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    gap: 25px;
+    align-items: center;
+}
+/*MISURE TEST*/
+.start-card {
+    min-height: 500px;
+    width: 60%;
+    
+    background-color: aqua;
+}
+/*MISURE TEST*/
+.footer-container {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    background-color: aqua;
+}
+/*MISURE TEST*/
+.footer-text {
+    min-height: 500px;
+    width: 60%;
+    text-align: center;
+}
+/*MISURE TEST*/
+.links {
+    min-height: 500px;
+    width: 60%;
+    text-align: center;
+}
 
-
-
-
-
-
-
+footer.container {
+    padding-bottom: 0;
+}
 
 
 
