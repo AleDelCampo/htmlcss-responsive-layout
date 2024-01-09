@@ -38,6 +38,8 @@ nav {
 .container {
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 /*MISURE TEST*/
 .cards-container-up {
@@ -68,16 +70,25 @@ nav {
 /*MISURE TEST*/
 .big-card {
     min-height: 600px;
-    width: 60%;
+    width: 100%;
     
     background-color: aqua;
 }
 /*MISURE TEST*/
 .card {
     min-height: 360px;
-    width: 60%;
+    width: 100%;
     
     background-color: aqua;
+}
+/*MISURE TEST*/
+.benefits-container {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    gap: 25px;
+    align-items: center;
 }
 /*MISURE TEST*/
 .texts-container {
@@ -91,7 +102,14 @@ nav {
 /*MISURE TEST*/
 .texts-card {
     min-height: 360px;
-    width: 60%;
+    width: 100%;
+    
+    background-color: aqua;
+}
+/*MISURE TEST*/
+.user-card {
+    min-height: 360px;
+    width: 100%;
     
     background-color: aqua;
 }
@@ -107,7 +125,7 @@ nav {
 /*MISURE TEST*/
 .start-card {
     min-height: 500px;
-    width: 60%;
+    width: 100%;
     
     background-color: aqua;
 }
@@ -122,13 +140,13 @@ nav {
 /*MISURE TEST*/
 .footer-text {
     min-height: 120px;
-    width: 60%;
+    width: 100%;
     text-align: center;
 }
 /*MISURE TEST*/
 .links {
     min-height: 120px;
-    width: 60%;
+    width: 100%;
     text-align: center;
 }
 
@@ -139,7 +157,7 @@ footer.container {
 @media screen and (min-width: 768px) {
     .cards-container-up {
         flex-direction: row;
-        padding: 0px 35px 0px 35px;
+        
     }
 
     .cards-container-up .card {
@@ -153,6 +171,39 @@ footer.container {
 
     .cards-container-down {
         flex-direction: row;
-        padding: 0px 35px 0px 35px;
+    }
+
+    .cards-container .big-card {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }  
+
+    .start-card {
+        width: 100%;    
+    }
+
+    .texts-card {
+        width: 60%;
+    }
+
+    .user-card {
+        width: 40%;
+    }
+
+    .texts-container {
+       flex-direction: row;
+    }
+
+    .benefits-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .benefits {
+        width: 48%;
     }
 }
