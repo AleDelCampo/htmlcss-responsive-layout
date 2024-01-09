@@ -17,24 +17,67 @@ nav {
     padding-left: 30px;
     padding-right: 30px;
 }
-
+/*MISURE TEST*/
 .logo {
     height: 40px;
     width: 80px;
     background-color: white;
 }
-
+/*MISURE TEST*/
 .bars {
     height: 40px;
     width: 80px;
     background-color: white;
 }
 
-
-
 .row {
     display: flex;
 }
+/*MISURE TEST*/
+.card-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: blue;
+    
+}
+/*MISURE TEST*/
+.cards-up {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: red;
+    gap: 25px;
+    align-items: center;
+}
+/*MISURE TEST*/
+.cards {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: red;
+    margin-top: 25px;
+    gap: 25px;
+    align-items: center;
+}
+/*MISURE TEST*/
+.big-card {
+    min-height: 600px;
+    width: 60%;
+    
+    background-color: aqua;
+}
+/*MISURE TEST*/
+.card {
+    min-height: 360px;
+    width: 60%;
+    
+    background-color: aqua;
+}
+
+
+
+
+
 
 
 
