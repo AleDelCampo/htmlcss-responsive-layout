@@ -48,6 +48,15 @@ nav {
     align-items: center;
 }
 /*MISURE TEST*/
+.cards-container-down {
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    gap: 25px;
+    align-items: center;
+}
+/*MISURE TEST*/
 .cards-container {
     flex-direction: column;
     max-height: 100%;
@@ -112,13 +121,13 @@ nav {
 }
 /*MISURE TEST*/
 .footer-text {
-    min-height: 500px;
+    min-height: 120px;
     width: 60%;
     text-align: center;
 }
 /*MISURE TEST*/
 .links {
-    min-height: 500px;
+    min-height: 120px;
     width: 60%;
     text-align: center;
 }
@@ -127,10 +136,23 @@ footer.container {
     padding-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+    .cards-container-up {
+        flex-direction: row;
+        padding: 0px 35px 0px 35px;
+    }
 
+    .cards-container-up .card {
+        min-height: 600px;
+        width: 32%;
+    }
 
+    .cards-container-up .big-card {
+        width: 68%;
+    }
 
-
-@media screen and (max-width: 767px) {
-    
+    .cards-container-down {
+        flex-direction: row;
+        padding: 0px 35px 0px 35px;
+    }
 }
