@@ -13,7 +13,6 @@ nav {
     display: flex;
 }
 
-/*MISURE TEST*/
 .nav-bar {
     min-height: 75px;
     max-width: 100%;
@@ -59,6 +58,7 @@ nav {
     max-width: 100%;
     gap: 25px;
     align-items: center;
+    text-align: center;
 }
 /*MISURE TEST*/
 .cards-container-down {
@@ -68,7 +68,51 @@ nav {
     margin-top: 25px;
     gap: 25px;
     align-items: center;
+    text-align: center;
 }
+
+.big-card {
+    flex-direction: column;
+}
+
+.big-card i {
+    margin-right: 6px;
+}
+
+.big-card span {
+    color: #0084fd;
+    font-weight: bold;
+}
+
+.demo {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+    text-align: left;
+}
+
+.demo p {
+    font-size: 0.9em;
+}
+
+.demo span {
+    font-size: 1.4em;
+}
+
+.big-card img {
+    max-width: 240px;
+    align-items: baseline;
+}
+
+.btn {
+    color: white;
+    background-color: #0084fd;
+    border-color: transparent;
+    border-radius: 20px;
+    padding: 8px 50px 8px 50px;
+    font-size: 1em;
+}
+
 /*MISURE TEST*/
 .cards-container {
     flex-direction: column;
@@ -80,17 +124,16 @@ nav {
 }
 /*MISURE TEST*/
 .big-card {
-    min-height: 600px;
     width: 100%;
-    
-    background-color: aqua;
+    border-radius: 4%;
+    background-color: #b5ddff;
 }
 /*MISURE TEST*/
 .card {
     min-height: 360px;
     width: 100%;
-    
-    background-color: aqua;
+    border-radius: 4%;
+    background-color: #b5ddff;
 }
 /*MISURE TEST*/
 .cards-container-img {
@@ -200,6 +243,11 @@ footer.container {
         width: 100%;
     }  
 
+    .demo-img {
+        text-align: left;
+        margin-left: 25px;
+    }
+
     .start-card {
         width: 100%;    
     }
@@ -280,8 +328,16 @@ footer.container {
         padding-right: 200px;
     }
 
-    .nav-bar{
+    .nav-bar {
         padding-left: 200px;
         padding-right: 200px;
+    }
+
+    .demo-img {
+        padding-top: 70px;
+    }
+
+    .big-card {
+        flex-direction: row;
     }
 }
