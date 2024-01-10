@@ -151,6 +151,15 @@ nav {
     padding: 30px;
 }
 
+.card-planning {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #b5ddff;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
 .card p {
     line-height: 30px;
 }
@@ -227,6 +236,11 @@ nav {
 .text span {
     color: #9792e4;
     font-size: 1.8em;
+    font-weight: bold;
+}
+
+.card-img {
+    margin-bottom: 100px;
 }
 
 
@@ -259,6 +273,7 @@ nav {
 .users span, .users p {
     color: white;
     text-align: center;
+    
 }
 /*MISURE TEST*/
 .benefits-container {
@@ -322,11 +337,15 @@ nav {
 .texts-card {
     width: 100%;
     flex-direction: column;
-    gap: 58px;
+    gap: 30px;
 }
 
 .texts-card p {
     line-height: 30px;
+}
+
+.texts-card span {
+    font-size: 2.4em;
 }
 
 .people {
@@ -437,7 +456,12 @@ nav {
     text-align: center;
     color: white;
 }
-/*MISURE TEST*/
+
+.feedback p:last-child {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .links {
     min-height: 120px;
     width: 100%;
@@ -456,20 +480,6 @@ footer.container {
 footer a {
     color: #9792e4;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 768px) {
     .cards-container-up {
@@ -502,16 +512,44 @@ footer a {
         margin-left: 25px;
     }
 
+    .strategic span {
+        font-size: 4em;
+    }
+
+    .users {
+        flex-direction: row;
+    }
+
     .start-card {
         width: 100%;    
+    }
+
+    .feedback {
+        width: 80%;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .feedback p {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .user-img {
+        margin-bottom: 16px;
     }
 
     .texts-card {
         width: 60%;
     }
 
+    .texts-card span {
+        font-size: 3em;
+    }
+
     .user-card {
         width: 40%;
+        align-self: baseline;
     }
 
     .texts-container {
@@ -542,8 +580,8 @@ footer a {
 @media screen and (min-width: 992px) {
 
     .nav-bar {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
     }
 
     .nav-icon {
@@ -551,18 +589,15 @@ footer a {
     }
 
     .container {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 180px;
+        padding-right: 180px;
     }
 
     .cards-container-img {
         flex-direction: row;
         align-items: flex-end;
-        padding: 60px;
-    }
-    /*MISURE TEST*/
-    .smaller {
-        min-height: 420px;
+        padding: 60px 100px 0px 100px;
+        gap: 60px;
     }
 
     .benefits {
@@ -572,6 +607,24 @@ footer a {
     .demo-img {
         justify-content: left;
     }
+
+    .strategic span {
+        font-size: 1.6em;
+    }
+
+    .card-planning {
+        border-radius: 20px;
+        flex-direction: column;
+        max-height: 600px;
+        align-items: center;
+    }
+
+    .planning {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
 }
 @media screen and (max-width: 992px) {
     .nav-items {
@@ -592,7 +645,7 @@ footer a {
     }
 
     .demo-img {
-        padding-top: 70px;
+        padding-top: 70px;      
     }
 
     .big-card {
