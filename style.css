@@ -218,10 +218,43 @@ nav {
     color: white;
 }
 
+.text {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.text span {
+    color: #9792e4;
+    font-size: 1.8em;
+}
 
 
+.users {
+    background-color: #9792e4;
+    display: flex;
+}
 
+.user-img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
 
+.user-img img {
+    max-width: 100%;
+    border-radius: 50%;  
+}
+
+.users p:nth-child(3) {
+    font-size: 1.2em;
+}
+
+.users span, .users p {
+    color: white;
+    text-align: center;
+}
 /*MISURE TEST*/
 .benefits-container {
     flex-direction: column;
@@ -231,6 +264,46 @@ nav {
     gap: 25px;
     align-items: center;
 }
+
+.benefits-container .card {
+    background-color: white;
+}
+
+.benefits .number {
+    color: #9792e4;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.benefits .caption {
+    color: #9792e4;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.benefits input {
+    background-color: #9792e4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 40px 8px 40px;
+}
+
+.text-benefits {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    color: white;
+    font-size: 1.9em;
+    font-weight: bold;
+}
+
+.texts-card span{
+    color: #9792e4;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
 /*MISURE TEST*/
 .texts-container {
     flex-direction: column;
@@ -242,17 +315,49 @@ nav {
 }
 /*MISURE TEST*/
 .texts-card {
-    min-height: 360px;
     width: 100%;
-    
-    background-color: aqua;
+    flex-direction: column;
+    gap: 58px;
 }
+
+.texts-card p {
+    line-height: 30px;
+}
+
+.people {
+    width: 200px;
+    height: 200px;
+    background: url(img/about.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.user-card button {
+    background-color: #9792e4;
+    padding: 6px 10px 6px 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.user-card {
+    color: #9792e4;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.fa-brands.fa-linkedin {
+    color: white;
+}
+
+
+
 /*MISURE TEST*/
 .user-card {
-    min-height: 360px;
     width: 100%;
-    
-    background-color: aqua;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 30px;
 }
 /*MISURE TEST*/
 .start-container {
@@ -267,33 +372,93 @@ nav {
 .start-card {
     min-height: 500px;
     width: 100%;
-    
-    background-color: aqua;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
 }
+
+.start-card a {
+    color: white;
+}
+
+.start-card input {
+    padding: 20px 60px 20px 60px ;
+    font-size: 1.2em;
+    color: #9792e4;
+    border-radius: 80px;
+    border: none;
+}
+
+.start-card p:nth-of-type(1) {
+    color: #c7c5f1;
+}
+
+.start-card p:nth-of-type(2) {
+    color: white;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.start-card p:nth-of-type(3) {
+    color: #fdc15f;
+    font-size: 4em;
+}
+
+.start-card p:nth-of-type(4) {
+    color: white;
+}
+
+.start-card p:nth-of-type(5) {
+    color: white;
+}
+
 /*MISURE TEST*/
 .footer-container {
     flex-direction: column;
     max-height: 100%;
     max-width: 100%;
     align-items: center;
-    background-color: aqua;
 }
 /*MISURE TEST*/
 .footer-text {
     min-height: 120px;
     width: 100%;
     text-align: center;
+    color: white;
 }
 /*MISURE TEST*/
 .links {
     min-height: 120px;
     width: 100%;
     text-align: center;
+    color: white;
+}
+
+.back{
+    background-color: #333333;
 }
 
 footer.container {
     padding-bottom: 0;
 }
+
+footer a {
+    color: #9792e4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
     .cards-container-up {
