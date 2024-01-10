@@ -57,7 +57,6 @@ nav {
     max-height: 100%;
     max-width: 100%;
     gap: 25px;
-    align-items: center;
     text-align: center;
 }
 /*MISURE TEST*/
@@ -84,6 +83,17 @@ nav {
     font-weight: bold;
 }
 
+.card span {
+    color: #0084fd;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.card i {
+    color: #0084fd;
+    font-size: 80px;
+}
+
 .demo {
     flex-direction: column;
     gap: 40px;
@@ -99,9 +109,12 @@ nav {
     font-size: 1.4em;
 }
 
+.demo-img {
+    justify-content: center;
+}
+
 .big-card img {
     max-width: 240px;
-    align-items: baseline;
 }
 
 .btn {
@@ -125,15 +138,21 @@ nav {
 /*MISURE TEST*/
 .big-card {
     width: 100%;
-    border-radius: 4%;
+    border-radius: 20px;
     background-color: #b5ddff;
 }
 /*MISURE TEST*/
 .card {
-    min-height: 360px;
     width: 100%;
-    border-radius: 4%;
+    border-radius: 20px;
     background-color: #b5ddff;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.card p {
+    line-height: 30px;
 }
 /*MISURE TEST*/
 .cards-container-img {
@@ -144,6 +163,65 @@ nav {
     gap: 25px;
     align-items: center;
 }
+
+.cards-container-img img {
+    width: 100%;
+}   
+
+.background {
+    background-color: #9792e4;
+}
+
+.strategic {
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.planning {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.planning span {
+    color: black;
+}
+
+.planning p {
+    font-style: italic;
+}
+
+.planning button {
+    padding: 12px 15px 12px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #9792e4;
+}
+
+.planning i {
+    color: black;
+    font-size: 20px;
+}
+
+.back {
+    background-color: white;
+}
+
+.cards-container-img span {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.strategic span,.strategic p {
+    color: white;
+}
+
+
+
+
+
 /*MISURE TEST*/
 .benefits-container {
     flex-direction: column;
@@ -223,7 +301,6 @@ footer.container {
     }
 
     .cards-container-up .card {
-        min-height: 600px;
         width: 32%;
     }
 
@@ -241,6 +318,7 @@ footer.container {
 
     .card {
         width: 100%;
+        padding: 22px;
     }  
 
     .demo-img {
@@ -274,7 +352,9 @@ footer.container {
         width: 48%;
     }
 
-    
+    .demo-img {
+        justify-content: left;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -313,8 +393,10 @@ footer.container {
         width: 31.3%;
     }
 
+    .demo-img {
+        justify-content: left;
+    }
 }
-
 @media screen and (max-width: 992px) {
     .nav-items {
         display: none;
